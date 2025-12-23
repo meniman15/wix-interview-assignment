@@ -75,15 +75,6 @@ npm run dev
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint
 
-## Recent Improvements
-
-### Fixed Column Addition Bug
-- **Issue**: When a row was selected and already contained columns, there was no way to add more columns to that row
-- **Solution**: 
-  - Updated `handleAddColumn` function to work when either a row or column is selected
-  - Added "Add Column" button to the column controls in the sidebar
-  - Users can now seamlessly add columns to any row, regardless of what's currently selected
-
 ## How to Use
 
 1. Click **"+ Add Row"** to create a new row
