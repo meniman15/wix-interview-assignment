@@ -134,7 +134,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const renderColumnContent = () => {
     const columnData = getColumnData()
-    const currentContentType = columnData?.content?.type
+    const currentContentType = columnData?.content?.type ?? 'text'
 
     return (
       <div className="sidebar-section">
