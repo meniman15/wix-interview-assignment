@@ -2,6 +2,9 @@
 
 A React webapp featuring a sidebar navigation and visual editor for building page layouts with rows, columns, and content blocks.
 
+## Sendbox version
+https://codesandbox.io/p/sandbox/github/meniman15/wix-interview-assignment
+
 ## Project Overview
 
 This application allows users to create page layouts by managing:
