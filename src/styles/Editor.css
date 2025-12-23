@@ -1,0 +1,244 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  background-color: #ffffff;
+  border: none;
+}
+
+.editor-header {
+  padding: 16px;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.btn-add-row {
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-add-row:hover {
+  background-color: #0052a3;
+}
+
+.editor-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.empty-state {
+  padding: 32px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.row-container {
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.row-container:hover {
+  border-color: #999;
+  background-color: #f5f5f5;
+}
+
+.row-container.selected {
+  border: 2px solid #0066cc;
+  background-color: #e3f2fd;
+}
+
+.row-header {
+  padding: 12px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-add-column {
+  padding: 4px 8px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-add-column:hover {
+  background-color: #0052a3;
+}
+
+.row-content {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  min-height: 150px;
+}
+
+.empty-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.column-container {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.column-container:hover {
+  border-color: #999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.column-container.selected {
+  border: 2px solid #0066cc;
+  background-color: #e3f2fd;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.column-toolbar {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-content {
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-content:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.alignment-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.btn-align {
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-align:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-align.active {
+  background-color: #0066cc;
+  color: #fff;
+  border-color: #0066cc;
+}
+
+.column-content {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-placeholder {
+  color: #ccc;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.content-block {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.content-block.text {
+  color: #666;
+}
+
+.content-block.image {
+  color: #666;
+}
+
+.text-content,
+.image-content {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.align-left {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-right {
+  align-items: flex-end;
+}
